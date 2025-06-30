@@ -4,30 +4,45 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Tea Recipe</title>
+        <!-- here we link the element bank we indeed to source elements from to work on with js -->
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/solid.min.css" rel="stylesheet">
+        <!-- we link the css file to style our html elements -->
         <link href="../assets/index.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+        <!-- we add the id tag to them define our container style that will work up the elements in its scope -->
         <div id="container">
         <header>
             <h1>How to Make Tea</h1>
+            <!-- we use an img tag to add an image and the src tag to denote its source -->
+            <!-- alt allows for alternative text to appear where the image does not load -->
             <img src="../assets/tea.jpg" alt="A cup of tea." />
             <p>At the very least, tea is a flavourful way of getting enough fluid into your body each day.
                 On top of that, studies have shown teas can help protect your teeth and your heart.</p>
         </header>
+        <!-- within this newly created section, we add an id tag and define our "events" and allocate their values using "=" -->
         <section id="ingredients" onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+            <!-- we use an "i", which was deprecated from italics (em tag now used for italics) to call an element for js to work upon-->
+            <!-- the aria function here makes it non-visible to readers using different formats, aside from visually reading-->
             <h2>Ingredients <i class="fa-solid fa-mug-hot" aria-hidden="true"></i></h2>
+            <!-- ul tags here create an unordered list -->
             <ul>
+                <!-- we list each item with an li tag within these ul tags -->
                 <li>Teabag</li>
                 <li>Water</li>
                 <li>Milk - Dairy/Plant-based (optional)</li>
                 <li>Sugar/Honey (optional)</li>
             </ul>
         </section>
+        <!-- within this newly created section, we add an id tag and define our "events" and allocate their values using "=" -->
         <section id="preparation" onmouseover="preparationHover()" onmouseout="preparationNormal()">
+            <!-- we use an "i", which was deprecated from italics (em tag now used for italics) to call an element for js to work upon-->
+            <!-- the aria function here makes it non-visible to readers using different formats, aside from visually reading-->
             <h2>Preparation <i class="fa-solid fa-square-check" aria-hidden="true"></i></h2>
+            <!-- ol tags here create an ordered list -->
             <ol>
+                <!-- we list each item with an li tag within these ol tags -->
                 <li>Run the tap water first so that it aerates, and boil in batches, so as not to lower the oxygen levels (oxygenated water has been found to improve water taste/quality in some cases)
                 </li>
                 <li>Add a tea bag to your mug/cup (this may vary in size, but <em>preferrably</em> a big one)
@@ -44,6 +59,9 @@
         <footer>
             <p>Copyright Me 2025</p>
         </footer>
+        <!-- create a division just below the footer to add javascript functions -->
+        <!-- the js functions call the relating elements by id and works upon them -->
+        <!-- we wrap js in script tags -->
         <div>
         <script>
         function ingredientsHover() {
@@ -65,3 +83,4 @@
         </div>
     </body>
 </html>
+
